@@ -26,14 +26,9 @@ function ProductDetailRightForm() {
           <p>
             {t(`ProductDetailRightForm.Titul`)}: <span>$33.37</span>
           </p>
+
           <p>
-          {t(`ProductDetailRightForm.Titul1`)}:{" "}
-            <span>
-              14% - <strike>$35.24</strike>
-            </span>
-          </p>
-          <p>
-          {t(`ProductDetailRightForm.Titul2`)}: <span>Beshop co.</span>
+            {t(`ProductDetailRightForm.Titul2`)}: <span>Beshop co.</span>
           </p>
           <p>
             {t(`ProductDetailRightForm.Titul3`)}: <span>147</span>

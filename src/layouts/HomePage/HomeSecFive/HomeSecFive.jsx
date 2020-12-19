@@ -1,9 +1,26 @@
 import { MDBAnimation, MDBContainer } from "mdbreact";
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import RightModal from "../../../components/RightModal/RightModal";
 import "./HomeSecFive.scss";
 function HomeSecFive() {
   const {t}=useTranslation();
+  const [salom, setSalom] = useState(false);
+  const [hello, setHello] = useState({
+    componentName: "Login",
+    nameBtn: "Sign in",
+    iconName: "sign-in",
+  });
+
+  const callHandle = (item) => {
+    console.log('salom')
+    setHello({
+      componentName: item.componentName,
+      nameBtn: item.nameBtn,
+      iconName: item.iconName,
+    });
+    setSalom(!salom);
+  };
   return (
     <div className="my-3">
       <MDBAnimation reveal type="fadeInUp">
@@ -15,9 +32,15 @@ function HomeSecFive() {
                 <p>{t(`HomeSecFive.Titul1`)}</p>
               </div>
               <div className="right-box">
+              
                 <form action="#!">
-                  <input type="email" placeholder={t(`HomeSecFive.Titul2`)} />
-                  <button type="submit">
+                  <button type="submit" onClick={() =>
+                      callHandle({
+                        componentName: "SignUp",
+                        nameBtn: "Sign up",
+                        iconName: "sign-up",
+                      })
+                    }>
                     {t(`HomeSecFive.Titul3`)}
                   </button>
                 </form>

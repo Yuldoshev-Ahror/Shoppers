@@ -6,13 +6,13 @@ import ProductDetailBottomSlider from "../../layouts/ProductDetail/ProductDetail
 import ProductDetailLeftSlider from "../../layouts/ProductDetail/ProductDetailLeftSlider/ProductDetailLeftSlider";
 import ProductDetailMidInfo from "../../layouts/ProductDetail/ProductDetailMidInfo/ProductDetailMidInfo";
 import ProductDetailRightForm from "../../layouts/ProductDetail/ProductDetailRightForm/ProductDetailRightForm";
-import ProductDetailUnderSlider from "../../layouts/ProductDetail/ProductDetailUnderSlider/ProductDetailUnderSlider";
+
 
 import "./ProductDetail.scss";
 function ProductDetail() {
   return (
     <div className="product-detail">
-      <TitleHemlet title="Product Detail"/>
+      <TitleHemlet title="Product Detail" />
       <OtherPageNav />
 
       <MDBContainer>
@@ -21,27 +21,26 @@ function ProductDetail() {
             <MDBAnimation type="fadeInLeft">
               <ProductDetailLeftSlider />
             </MDBAnimation>
+             <MDBAnimation type="fadeInRight">
+              <ProductDetailRightForm />
+            </MDBAnimation>
           </MDBCol>
-          <MDBCol sm="12" md="5" className="mb-3">
+          <MDBCol sm="12" md="8" className="mb-3">
             <MDBAnimation type="fadeInUp">
               <ProductDetailMidInfo />
             </MDBAnimation>
           </MDBCol>
-          <MDBCol sm="12" md="3" className="mb-3">
-            <MDBAnimation type="fadeInRight">
-              <ProductDetailRightForm />
-            </MDBAnimation>
-          </MDBCol>
+         
         </MDBRow>
+
+
         <div className="mb-5">
           <MDBAnimation reveal type="fadeInUp">
             <ProductDetailBottomSlider />
           </MDBAnimation>
         </div>
         <div className="mb-5">
-          <MDBAnimation reveal type="fadeInUp">
-            <ProductDetailUnderSlider />
-          </MDBAnimation>
+          <MDBAnimation reveal type="fadeInUp"></MDBAnimation>
         </div>
       </MDBContainer>
     </div>

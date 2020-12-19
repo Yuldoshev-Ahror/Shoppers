@@ -5,97 +5,115 @@ function SubMneu() {
     <div className="submenu-box">
       <div className="item-wrap">
         <div className="item-header">
-          <span>item 1 </span> <i className="fas fa-angle-right"></i>
+          <span>item 1</span> <i className="fas fa-angle-right"></i>
         </div>
         <div className="item-right">
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
+          {/* ------------------------------------------- */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
         </div>
       </div>
+
       <div className="item-wrap">
         <div className="item-header">
-          <span>item 1 </span> <i className="fas fa-angle-right"></i>
+          <span>item 1</span> <i className="fas fa-angle-right"></i>
         </div>
         <div className="item-right">
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
+          {/* ------------------------------------------- */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
         </div>
       </div>
+
       <div className="item-wrap">
         <div className="item-header">
-          <span>item 1 </span> <i className="fas fa-angle-right"></i>
+          <span>item 1</span> <i className="fas fa-angle-right"></i>
         </div>
         <div className="item-right">
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
-          <ul>
-            <li className="titul mb-2">
-              <h5>
-                <b>header</b>
-              </h5>
-            </li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-            <li>hello world</li>
-          </ul>
+          {/* ------------------------------------------- */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
+          <div className="item-wrap2">
+            <div className="item-header2">
+              <span>item - 2</span> <i className="fas fa-angle-right"></i>
+            </div>
+            <div className="item-right2">salom</div>
+          </div>
+          {/* ------------------------------------------------ */}
         </div>
       </div>
+      
     </div>
   );
 }

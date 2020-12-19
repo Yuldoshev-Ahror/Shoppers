@@ -1,4 +1,4 @@
-import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBIcon } from "mdbreact";
 import React, { useState } from "react";
 import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
@@ -6,6 +6,7 @@ import AccountDetails from "../../layouts/AccountDetails/AccountDetails";
 import Dashboard from "../../layouts/Dashboard/Dashboard";
 import MyAddress from "../../layouts/MyAddress/MyAddress";
 import Orders from "../../layouts/Orders/Orders";
+import MessageList from "../../layouts/MessageList/MessageList";
 
 import "./MyAccount.scss";
 
@@ -14,7 +15,7 @@ function MyAccount() {
 
   return (
     <div className="my-acc-page">
-      <TitleHemlet title="My Account"/>
+      <TitleHemlet title="My Account" />
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">
@@ -119,6 +120,18 @@ function MyAccount() {
               <div
                 className={
                   `font-weight-bolder px-4 py-2 left-tab-box ` +
+                  `${state === 5 ? " bg-primary text-white " : " text-muted "}`
+                }
+                onClick={() => {
+                  setstate(5);
+                }}
+              >
+                <MDBIcon icon="clipboard-list pr-3 my-text-collo" />
+                Shikoyat
+              </div>
+              <div
+                className={
+                  `font-weight-bolder px-4 py-2 left-tab-box ` +
                   `${state === 4 ? " bg-primary text-white " : " text-muted "}`
                 }
                 onClick={() => {
@@ -187,6 +200,12 @@ function MyAccount() {
                     return (
                       <div>
                         <AccountDetails />
+                      </div>
+                    );
+                  case 5:
+                    return (
+                      <div>
+                        <MessageList />
                       </div>
                     );
                   default:

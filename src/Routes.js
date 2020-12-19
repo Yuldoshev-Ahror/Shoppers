@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import AdminProtectedRoute from './ProtectRoute';
 
 // FREE
 
@@ -20,17 +21,15 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/otherpage" component={OtherPage} />
+        <AdminProtectedRoute path="/other" component={OtherPage} />
         <Route path="/productlist" component={ProductList} />
-        <Route path="/productdetail/:id" component={ProductDetail} />
-        <Route path="/faqpage" component={FaqPage} />
-        <Route path="/cardpage" component={CardPage} />
-        <Route path="/wishlistpage" component={WishListPage} />
-        <Route path="/checkoutpage" component={CheckOutPage} />
-        <Route path="/useraccount" component={UserAccount} />
-        <Route path="/myaccount" component={MyAccount} />
-
-        {/* FREE */}
+        <AdminProtectedRoute path="/productdetail/:id" component={ProductDetail} />
+        <AdminProtectedRoute path="/faq" component={FaqPage} />
+        <AdminProtectedRoute path="/card" component={CardPage} />
+        <AdminProtectedRoute path="/wishlist" component={WishListPage} />
+        <AdminProtectedRoute path="/checkout" component={CheckOutPage} />
+        <AdminProtectedRoute path="/useraccount" component={UserAccount} />
+        <AdminProtectedRoute path="/myaccount" component={MyAccount} />
 
         <Route
           render={function () {

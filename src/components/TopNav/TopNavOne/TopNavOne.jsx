@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./TopNavOne.scss";
 import DropDownLang from "./DropDownLang/DropDownLang";
-import { MDBContainer, MDBModal, MDBModalBody, MDBModalHeader } from "mdbreact";
+import { MDBContainer, MDBModal, MDBModalBody, MDBModalHeader,MDBTooltip } from "mdbreact";
 import Login from "../../FormComponent/Login/Login";
 import SignUp from "../../FormComponent/SignUp/SignUp";
 import { useTranslation } from "react-i18next";
+import { Link, useLocation } from 'react-router-dom';
 
 function TopNavOne() {
   const {t} = useTranslation();
@@ -20,6 +21,18 @@ function TopNavOne() {
       [modalNumber]: !state[modalNumber],
     });
   }
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if(location.state && location.state.login) {
+      setstate({
+        ...state,
+        modal8: true
+      });
+    }
+      
+  },[])
 
   return (
     <div>
@@ -74,6 +87,8 @@ function TopNavOne() {
                 <DropDownLang />
               </li>
               <li>
+              <MDBTooltip placement="bottom">
+                <Link to='/myaccount'>
                 <svg
                   width="16"
                   height="16"
@@ -86,6 +101,9 @@ function TopNavOne() {
                     fill="#4E5262"
                   />
                 </svg>
+                </Link>
+                <div>My Account</div>
+      </MDBTooltip>
                 <span
                   className="sign-box px-3 py-2"
                   onClick={() => {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductDetailMidInfo.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import ChatPage from '../../../components/Chats';
 function ProductDetailMidInfo() {
   return (
     <div className="product-detail-mid-info">
@@ -24,7 +25,6 @@ function ProductDetailMidInfo() {
           <Tabs>
             <TabList>
               <Tab>Technical informations</Tab>
-              <Tab>Feedbacks</Tab>
               <Tab>Reviews</Tab>
             </TabList>
 
@@ -73,11 +73,9 @@ function ProductDetailMidInfo() {
               </div>
             </TabPanel>
             <TabPanel>
-              <h2>Any content 2</h2>
+            <ChatPage />
             </TabPanel>
-            <TabPanel>
-              <h2>Any content 3</h2>
-            </TabPanel>
+            
           </Tabs>
         </div>
       </div>

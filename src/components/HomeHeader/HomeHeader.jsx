@@ -22,13 +22,6 @@ function HomeHeader() {
           </div>
 
           <div className="right-header">
-            <div className="top-box">
-              <span>#one</span>
-              <span>#one</span>
-              <span>#one</span>
-              <span>#one</span>
-              <span>#one</span>
-            </div>
             <div className="under-box">
               <SliderBox />
             </div>

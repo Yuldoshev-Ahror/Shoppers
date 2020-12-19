@@ -1,13 +1,14 @@
 .check-out-page {
+  input,
+  textarea {
+    border-radius: 20px !important;
 
-    input,
-    textarea {
-        border-radius: 20px !important;
-
-        &::placeholder {
-            font-size: 14px;
-            color: lightgrey;
-        }
+    &::placeholder {
+      font-size: 14px;
+      color: lightgrey;
     }
-
+  }
+  .custom-select {
+    border-radius: 50px;
+  }
 }

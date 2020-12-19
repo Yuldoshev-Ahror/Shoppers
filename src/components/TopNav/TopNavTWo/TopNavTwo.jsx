@@ -1,4 +1,4 @@
-import { MDBContainer } from "mdbreact";
+import { MDBContainer,MDBTooltip} from "mdbreact";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import RightModal from "../../RightModal/RightModal";
@@ -7,11 +7,11 @@ import SearchBox from "./SearchBox/SearchBox";
 
 import "./TopNavTwo.scss";
 import { useEffect } from "react";
-import ShopLogo from "../../../assets/shopLogo.svg"
+import ShopLogo from "../../../assets/shopLogo.svg";
 import { useTranslation } from "react-i18next";
 
 function TopNavTwo() {
-  const [ t ] = useTranslation();
+  const [t] = useTranslation();
   const [salom, setSalom] = useState(false);
   const [hello, setHello] = useState({
     componentName: "Login",
@@ -40,7 +40,7 @@ function TopNavTwo() {
         <div className="top-nav-two">
           <div className="left-nav">
             <Link to="/">
-              <img src={ShopLogo} alt=""/>
+              <img src={ShopLogo} alt="" />
             </Link>
           </div>
           <div className="mid-nav">
@@ -49,41 +49,6 @@ function TopNavTwo() {
           <RightModal componentName={hello.componentName} isBoolen={salom} />{" "}
           <div className="right-nav">
             <div className="right-nav-icons user">
-              {/* <div className="d-flex">
-                <div className="mr-2">
-                  <span
-                    onClick={() =>
-                      callHandle({
-                        componentName: "Login",
-                        nameBtn: "Sign in",
-                        iconName: "sign-in",
-                      })
-                    }
-                  >
-                    sign in
-                  </span>
-                  <div>
-                    <RightModal
-                      componentName={hello.componentName}
-                      isBoolen={salom}
-                    />{" "}
-                  </div>
-                </div>
-                <div className="mr-2">
-                  <span
-                    onClick={() =>
-                      callHandle({
-                        componentName: "SignUp",
-                        nameBtn: "Sign up",
-                        iconName: "sign-up",
-                      })
-                    }
-                  >
-                    sign up
-                  </span>
-                </div>
-              </div> */}
-
               <div className="mob-sign">
                 <svg
                   width="22"
@@ -108,7 +73,7 @@ function TopNavTwo() {
                       })
                     }
                   >
-                   { t(`TopNavTwo.Titul`) }
+                    {t(`TopNavTwo.Titul`)}
                   </div>
                   <br />
                   <div
@@ -121,14 +86,18 @@ function TopNavTwo() {
                       })
                     }
                   >
-                    { t(`TopNavTwo.Titul2`) }
+                    {t(`TopNavTwo.Titul2`)}
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="right-nav-icons">
-              <span className="counter">1</span>
+            <MDBTooltip placement="left">
+        
+        
+              <Link to='/wishlist'>
+              <span className="counter">999</span>
               <svg
                 width="25"
                 height="22"
@@ -144,7 +113,12 @@ function TopNavTwo() {
                   strokeLinejoin="round"
                 />
               </svg>
+              </Link>
+              <div>wishlist</div>
+      </MDBTooltip>
             </div>
+            <MDBTooltip placement="top">
+            <Link to='/card'>
             <div className="right-nav-icons">
               <span className="counter">1</span>
               <svg
@@ -160,6 +134,9 @@ function TopNavTwo() {
                 />
               </svg>
             </div>
+            </Link>
+            <div>Card</div>
+      </MDBTooltip>
 
             <div className="summ">1257 364 UZS</div>
           </div>

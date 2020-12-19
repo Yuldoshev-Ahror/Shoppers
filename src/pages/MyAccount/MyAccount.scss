@@ -1,9 +1,13 @@
 .my-acc-page {
-    .left-tab-box {
-        transition: all 0.2s linear;
+  .left-tab-box {
+    transition: all 0.2s linear;
 
-        &:hover {
-            cursor: pointer;
-        }
+    &:hover {
+      cursor: pointer;
     }
+  }
+}
+
+.my-text-collo {
+  color: grey;
 }

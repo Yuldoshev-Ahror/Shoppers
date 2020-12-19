@@ -1,6 +1,7 @@
 import { MDBAnimation, MDBCol, MDBContainer } from "mdbreact";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import "./WishListPage.scss";
@@ -76,7 +77,6 @@ function WishListPage() {
         if (element.id === id) element.count = element.count + 1;
       });
       setProductCount(!productCount);
-      console.log(arry);
       return;
     }
     if (item === 0) {
@@ -116,7 +116,6 @@ function WishListPage() {
                     <div>{t(`WishListPage.Titul1`)}</div>
                     <div>{t(`WishListPage.Titul2`)}</div>
                     <div>{t(`WishListPage.Titul3`)}</div>
-                    <div>{t(`WishListPage.Titul4`)}</div>
                   </div>
                   <div>
                     {arry.map((element) => {
@@ -129,55 +128,14 @@ function WishListPage() {
                                 alt="wfefewfwe"
                               />
                             </div>
-                            <h4>{element.name}</h4>
+                            <h4><Link to={`productdetail/${123456}`}>{element.name}</Link></h4>
                             <p>
                               <p>${element.price}.00</p>
-                              <div className="a-none">
-                                <div className="my-count-product">
-                                  <div
-                                    onClick={() => {
-                                      hundleClick(element.id, 0);
-                                    }}
-                                  >
-                                    <i class="fa fa-minus"></i>
-                                  </div>
-                                  <div>{element.count}</div>
-                                  <div
-                                    onClick={() => {
-                                      hundleClick(element.id, 1);
-                                    }}
-                                  >
-                                    <i class="fa fa-plus"></i>
-                                  </div>
-                                </div>
-                              </div>
                             </p>
-                            <div className="b-none">
-                              <div className="my-count-product">
-                                <div
-                                  onClick={() => {
-                                    hundleClick(element.id, 0);
-                                  }}
-                                >
-                                  <i class="fa fa-minus"></i>
-                                </div>
-                                <div>{element.count}</div>
-                                <div
-                                  onClick={() => {
-                                    hundleClick(element.id, 1);
-                                  }}
-                                >
-                                  <i class="fa fa-plus"></i>
-                                </div>
-                              </div>
+                            <div className='tdaakjndjn'>
+                              9999
                             </div>
-                            <div className="ma-txt">
-                              <p>In stock</p>
-                              <div className="product-delete a-none">
-                                <p>ADD TO CARD</p>
-                              </div>
-                            </div>
-                            <div className="product-delete b-none">
+                            <div className='addtocardtdd'>
                               <p>ADD TO CARD</p>
                             </div>
                           </div>

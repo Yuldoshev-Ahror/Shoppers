@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./HomeSecThree.scss";
 import HomeTabOne from "./HomeTabOne/HomeTabOne";
 import HomeTabTwo from "./HomeTabTwo/HomeTabTwo";
-import SaleImg from '../../../assets/saleImg.png'
+import SaleImg from "../../../assets/saleImg.png";
 function HomeSecThree() {
   const { t } = useTranslation();
   let daysLeft = 10;
@@ -25,10 +25,7 @@ function HomeSecThree() {
                       $240
                     </span>
                   </div>
-                  <img
-                    src={SaleImg}
-                    alt="imageseswfe"
-                  />
+                  <img src={SaleImg} alt="imageseswfe" />
                   <p>{t(`HomeSecThree.Titul2`)}</p>
                   <div className="progress-box">
                     <div className="progress-top">
